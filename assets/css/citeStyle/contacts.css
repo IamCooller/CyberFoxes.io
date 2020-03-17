@@ -104,3 +104,29 @@
     border-color:rgb(0,102,255);
     box-shadow: 0px 4px 4px rgba(89, 192, 190, 0.49);
 }
+.wrap_three .forms input:active, :hover, :focus {
+    outline: 0;
+    outline-offset: 0;
+}
+
+    .wrap_three .forms input[type="text"]:hover{
+        -webkit-box-shadow: 0px 0px 29px 0px rgba(0,247,255,1);
+    -moz-box-shadow: 0px 0px 29px 0px rgba(0,247,255,1);
+    box-shadow: 0px 0px 29px 0px rgba(0,247,255,1);
+        }
+        .wrap_three .forms input[type="email"]:hover{
+            -webkit-box-shadow: 0px 0px 29px 0px rgba(0,247,255,1);
+        -moz-box-shadow: 0px 0px 29px 0px rgba(0,247,255,1);
+        box-shadow: 0px 0px 29px 0px rgba(0,247,255,1);
+            }
+            .wrap_three .forms textarea:hover{
+                -webkit-box-shadow: 0px 0px 29px 0px rgba(0,247,255,1);
+            -moz-box-shadow: 0px 0px 29px 0px rgba(0,247,255,1);
+            box-shadow: 0px 0px 29px 0px rgba(0,247,255,1);
+                }
+                .wrap_three .btn:hover{
+                    -webkit-box-shadow: 0px 0px 29px 0px rgba(0,247,255,1);
+                -moz-box-shadow: 0px 0px 29px 0px rgba(0,247,255,1);
+                box-shadow: 0px 0px 29px 0px rgba(0,247,255,1);
+                    }
+    
