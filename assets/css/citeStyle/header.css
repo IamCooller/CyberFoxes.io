@@ -1,0 +1,432 @@
+header{
+    background: url("../../img/backk.png") no-repeat center top;
+    background-size:cover;
+
+    position: relative;
+}
+
+.container{
+    opacity:0; /*Элемент полностью прозрачный (невидимый)*/
+    transition: 1s; /*Скорость перехода состояния элемента*/
+    animation: show 4s 1; /* Указываем название анимации, её время и количество повторов*/
+    animation-fill-mode: forwards; /* Чтобы элемент оставался в конечном состоянии анимации */
+    animation-delay: 1s; /* Задержка перед началом */
+}
+
+@keyframes show{
+    0%{
+    opacity:0;
+    }
+    100% {
+    opacity:1;
+    }
+}
+
+.wrap {
+    position: absolute;
+    top: 30%;
+    left: 35%;
+    right: 35%;
+    }
+.img{
+   
+    object-fit: contain;
+    
+}
+img{
+    max-width: 500px;
+    position: relative;
+}
+
+.ellipse_one {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+	-moz-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	-o-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+    object-fit: contain;
+    animation-name: rotation;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+
+@-webkit-keyframes  rotation {
+    from {
+        transform: translate(-50%, -50%) rotate(0deg);
+      }
+      to {
+        transform: translate(-50%, -50%) rotate(360deg);
+}
+}
+.img .triangle{
+    position: absolute;
+    object-fit: contain;
+    display: block;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+	-moz-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	-o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    animation-name: move;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+}
+@-webkit-keyframes move {
+    from {
+        transform: translate(-50%, -55%) rotate(0deg);  
+      }
+      to {
+        transform: translate(-50%, -50%) rotate(0deg);
+}
+}
+
+.img .fox{
+    position: absolute;
+    object-fit: contain;
+    display: block;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+	-moz-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	-o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    animation-name: move_fox;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+}
+
+@-webkit-keyframes move_fox {
+    from {
+        transform: translate(-50%, -50%) rotate(0deg);  
+      }
+      to {
+        transform: translate(-50%, -55%) rotate(0deg);
+}
+}
+h1{
+    font-family: 'Franklin Gothic Demi Cond' , sans-serif;
+    font-weight: 900;
+   
+    font-size: 55px;
+    letter-spacing: 0.50em;
+    color:#0094FF;
+    box-sizing: border-box;
+    -webkit-text-stroke: 2px #305068;
+    text-shadow: 0px 0px 10px rgba(157, 247, 250, 0.51);
+    padding-top: 40px;
+}
+
+.title{
+    font-family: 'Franklin Gothic Demi Cond' , sans-serif;
+    padding-top: 35px;
+    font-weight: 900;
+    font-size: 25px;
+    line-height: 20px;
+    letter-spacing: 0.105em;
+    -webkit-text-stroke: 1px #1E4460;
+    color:#B37B8E;
+}
+
+.main_title .btn{
+    background:rgba(255, 255, 255, 0.28);
+    margin-top: 2%;
+	color: #DA6363;
+	width: 180px;
+	padding: 19px 0;
+    text-decoration: none;
+    font-family: 'Roboto Slab' sans-serif;
+    font-weight: 900;
+    font-size: 16px;
+    line-height: 21px;
+    transition: all 0.5s ease;
+    border: 2px solid ;
+    border-radius: 30px;
+    border-color:rgb(0,102,255);
+    box-shadow: 0px 4px 4px rgba(89, 192, 190, 0.49);
+}
+
+.main_title .btn:hover{
+    padding: 9px 19px;
+    box-shadow: 0px 4px 4px rgb(85, 125, 201, 0.90);
+}
+.main_title{
+    display: block;
+    text-align: center;
+    padding-top: 500px;
+}
+
+/* Smartphones (вертикальная и горизонтальная ориентация) ----------- */
+@media only screen and (min-width : 320px) and (max-width : 480px) {
+    .main_title .title_text {
+        font-size: 10px;
+        text-align: center;
+        max-width: 50px;
+    }
+    .main_title{
+        display: block;
+        text-align: center;
+        
+        padding-top: 300px;
+    }
+    .titel_text {
+        font-size: 2rem;
+    }
+    img{
+       max-width: 300px;
+    }
+    /* стили */
+    }
+    
+    /* Smartphones (горизонтальная) ----------- */
+    @media only screen and (min-width: 321px) {
+    /* стили */
+    }
+    
+    /* Smartphones (вертикальная) ----------- */
+    @media only screen and (max-height: 785px) {
+        .main_title {
+            padding-top: 24em;
+        }/* стили */
+        .container .wrap_two .img_two {
+            margin-top: 0; 
+    
+        }
+        .wrap_three .img_moon {
+            position: relative;
+            text-align: center;
+            max-height: 300px;
+            height: 100%;
+            top: -60px;
+        }
+    }
+
+    @media only screen and (max-height: 685px) {
+        .main_title .title_text {
+            font-size: 10px;
+            text-align: center;
+            max-width: 50px;
+        }
+        .main_title{
+            display: block;
+            text-align: center;
+            
+            padding-top: 300px;
+        }
+        .titel_text {
+            font-size: 2rem;
+        }
+        img{
+           max-width: 300px;
+        }
+    }
+    @media only screen and (max-height: 600px){
+    .wrap_three .img_moon {
+        position: relative;
+        text-align: center;
+        max-height: 150px;
+        height: 100%;
+        top: -60px;
+    }
+    
+} 
+    /* iPads (вертикальная и горизонтальная) ----------- */
+    @media only screen and (min-width: 768px) and (max-width: 1024px) {
+     /* стили */
+    }
+    @media only screen and (min-width: 1000px) and (max-width: 1024px) {
+        /* стили */
+       }
+    
+    /* iPads (горизонтальная) ----------- */
+    @media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+    /* стили */
+    }
+    
+    /* iPads (вертикальная) ----------- */
+    @media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
+    /* стили */
+    }
+    
+    /* iPad 3**********/
+    @media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 2) {
+    /* стили */
+    }
+    @media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2) {
+    /* стили */
+    }
+    
+    /* Настольные компьютеры и ноутбуки ----------- */
+    @media only screen  and (min-width: 1224px) {
+    /* стили */
+    }
+    
+    /* Большие экраны ----------- */
+    @media only screen  and (min-width: 1824px) {
+    /* стили */
+    }
+    
+    /* iPhone 4 ----------- */
+    @media only screen and (min-width: 320px) and (max-width: 480px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 2) {
+    /* стили */
+    }
+    @media only screen and (min-width: 320px) and (max-width: 480px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2) {
+    /* стили */
+    }
+    
+    /* iPhone 5 ----------- */
+    @media only screen and (min-width: 320px) and (max-height: 568px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 2){
+    /* стили */
+    }
+    @media only screen and (min-width: 320px) and (max-height: 568px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 2){
+    /* стили */
+    }
+    
+    /* iPhone 6 ----------- */
+    @media only screen and (min-width: 375px) and (max-height: 667px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 2){
+    /* стили */
+    }
+    @media only screen and (min-width: 375px) and (max-height: 667px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 2){
+    /* стили */
+    }
+    
+    /* iPhone 6+ ----------- */
+    @media only screen and (min-width: 414px) and (max-height: 736px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 2){
+    /* стили */
+    }
+    @media only screen and (min-width: 414px) and (max-height: 736px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 2){
+    /* стили */
+    }
+    
+    /* Samsung Galaxy S3 ----------- */
+    @media only screen and (min-width: 320px) and (max-height: 640px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 2){
+    /* стили */
+    }
+    @media only screen and (min-width: 320px) and (max-height: 640px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 2){
+    /* стили */
+    }
+    
+    /* Samsung Galaxy S4 ----------- */
+    @media only screen and (min-width: 320px) and (max-height: 640px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 3){
+    /* стили */
+    }
+    @media only screen and (min-width: 320px) and (max-height: 640px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 3){
+    /* стили */
+    }
+    
+    /* Samsung Galaxy S5 ----------- */
+    @media only screen and (min-width: 360px) and (max-height: 640px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 3){
+    /* стили */
+    }
+    @media only screen and (min-width: 360px) and (max-height: 640px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 3){
+    /* стили */
+    }
+    
+
+/*
+@media (max-width: 340px) { 
+    header{
+        height: 100%;
+    }
+    h1 {
+        font-size: 30px;
+    }
+    .main_title{
+        display: block;
+        text-align: center;
+        
+        padding-top: 300px;
+    }
+    img{
+       max-width: 50px;
+    }
+  }
+
+@media (max-width: 576px) { 
+    header{
+        height: 100%;
+    }
+    h1 {
+        font-size: 30px;
+    }
+    .main_title{
+        display: block;
+        text-align: center;
+        
+        padding-top: 300px;
+    }
+    img{
+       max-width: 100px;
+    }
+  }
+ 
+
+
+@media (min-width: 768px) {
+    header{
+        height: 100%;
+    }
+    h1 {
+        font-size: 30px;
+    }
+    .main_title{
+        display: block;
+        text-align: center;
+        
+        padding-top: 300px;
+    }
+    img{
+       max-width: 200px;
+    }
+  }
+
+
+@media (min-width: 992px) {
+    header{
+        height: 100%;
+    }
+    h1 {
+        font-size: 40px;
+    }
+    .main_title{
+        display: block;
+        text-align: center;
+        
+        padding-top: 500px;
+    }
+    img{
+       max-width: 500px;
+    }
+ }
+
+@media (min-width: 1200px) {  
+    header{
+        height: 100%;
+    }
+    h1 {
+        font-size: 50px;
+    }
+    .main_title{
+        display: block;
+        text-align: center;
+        
+        padding-top: 600px;
+    }
+    img{
+       max-width: 600px;
+    }
+  
+}*/

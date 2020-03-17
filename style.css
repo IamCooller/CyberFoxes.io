@@ -1,0 +1,22 @@
+@import url("assets/css/citeStyle/header.css");
+@import url("assets/css/citeStyle/about.css");
+@import url("assets/css/citeStyle/contacts.css");
+@import url("assets/css/citeStyle/portfolio.css");
+@import url("assets/css/fullpage/fullpage.min.css");
+@import url("assets/css/citeStyle/normilaze.css");
+@import url("assets/css/citeStyle/navbar.css");
+
+#fp-nav ul li a.active span{
+  background-color: #0371c6;
+  padding: 10px;
+}
+#fp-nav ul li a span {
+  background-color: rgba(4, 114, 199, 0);
+  border: 1px solid #0371c6;
+  padding: 5px;
+  margin-right: 10px;
+}
+.fp-tooltip{
+  margin-left: 10px;
+  margin-top: 6px;
+}

@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="http://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@500&family=Open+Sans+Condensed&display=swap" rel="stylesheet">
+  <title>CyberFoxes</title>
+</head>
+
+<body>
+  <iframe hidden src="audio/Hyper.mp3" allow="autoplay" type="audio/mpeg"></iframe>
+  <audio autoplay="autoplay" data-autoplay>
+    <source src="audio/Hyper.mp3" type="audio/mpeg">
+    <source src="audio/Hyper.ogg" type="audio/ogg; codecs=vorbis">
+    <source src="audio/Hyper.wav" controls autoplay="autoplay">
+    <source src="HyperS.mp3" type="audio/mpeg">
+    </audio>
+  <!-- Навигация! её не трогай, а то поломаешь -->
+  <nav  class="navMenu fixed-top navbar navbar-default">
+    <div class="navList container">
+      <div class="nav_left">
+        <ul class="nav_left__list" id="Mymenu">
+          <li data-menuanchor="main" class="active"><a href="#main">Главная</a></li>
+          <li data-menuanchor="about"><a href="#about">О нас</a></li>
+        </ul>
+      </div>
+
+      <div class="nav_right">
+        <ul class="nav_right__list" id="Mymenu">
+          <li data-menuanchor="portfolio"><a href="#portfolio">Наши работы</a></li>
+          <li data-menuanchor="contacts"><a href="#contacts">Контакты</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+  <!-- Тут начинается сам сайт -->
+  <div id="fullpage">
+    <header class="section">
+      <div class="container show">
+        <div class="wrap">
+          <div class="img">
+            <img src="assets/img/ellipse.png" alt="" class="ellipse_one">
+            <img src="assets/img/triangle.png" alt="" class="triangle">
+            <img src="assets/img/fox.png" alt="" class="fox">
+          </div>
+        </div>
+  
+  
+        <div class="main_title">
+          <h1 class=titel_text>CyberFoxes</h1>
+          <p class="title">Добро пожаловать</p>
+          <a href="#сontacts" class="btn">Связаться</a>
+        </div>
+      </div>
+     
+
+    </header><!-- Тут первая страница -->
+    <div class="section about">
+      <div class="container">
+        <div class="wrap_two">
+          <div class="img_two">
+            <img src="assets/img/fox_two.png" alt="" width=200>
+          
+          <p>Привет, мы рады тебя здесь видеть! Мы являемся фрилансерами в области веб-разработки. <br> Каждый свой проект мы
+            стараемся выполнять быстро и креативно. Мы будем рады, если ты обратишься к нам за помощью. Ждем тебя!</p>
+          </div>
+          </div>
+          <div class="people">
+            <div class="ilya">
+              <img src="assets/img/ilya.png" alt="" >
+              <p class="title_people">Илья</p>
+              <p class="title_about">Frontend, Disigner</p>
+            </div>
+              <div class="vlad">
+                <img src="assets/img/vlad.png" alt="" >
+                <p class="title_people">Влад</p>
+              <p class="title_about">Frontend, Backend</p>
+              </div>
+            
+            
+          </div>
+      </div>
+    </div><!-- Тут вторая страница -->
+
+    <div class="section portfolio" ><!-- Тут третья страница -->
+      <div class="portfolio__logo">
+        <img src="assets/img/portLogo.png" alt="" srcset="">
+      </div>
+      <div class="portfolio__slider">
+        <span class="next"><img src="https://img.icons8.com/material-outlined/48/000000/double-right.png"/></span>
+        <span class="prev"><img src="https://img.icons8.com/material-outlined/48/000000/double-right.png"/></span>
+          <div class="slider">
+              <div class="slider__item"> <a href="#"><img src="assets/img/fox.png" alt="" srcset=""></a>
+                <h3 class="slider__title"> Название сайта </h3>
+              </div>
+              <div class="slider__item"><a href="#"><img src="assets/img/triangle.png" alt="" srcset=""></a>
+                <h3 class="slider__title"> Название сайта </h3>
+              </div>
+              <div class="slider__item"><a href="#"><img src="assets/img/moon.png" alt="" srcset=""></a>
+                <h3 class="slider__title"> Название сайта </h3>
+              </div>
+          </div>
+        
+      </div>
+    </div>
+   
+    <div class="section contacts"> 
+      <div class="container">
+        <div class="wrap_three">
+          <div class="img_moon">
+            <img src="assets/img/moon.png" alt="" width=400>
+          </div>
+          <div class="forms container ">
+            <form action="#" class="form" method="POST">
+              <input type="text" placeholder="Имя" name="name" class="input" required>
+              <input type="email" placeholder="E-mail" name="email" class="input" required>       
+              <textarea type="text" placeholder="Сообщение" name="text" class="input input_text" required> </textarea>
+          </form>
+          <div class="forms_button">
+            <button type="submit" class="btn btn-form">Связаться</button>  
+          </div>
+            
+          </div>
+          
+        </div>
+      </div>
+      
+    
+    </div><!-- Тут четвертая страница -->
+  </div>
+  <!-- Конец сайта -->
+
+
+
+
+
+  <script src="assets/js/fullpage/fullpage.min.js"></script>
+  <script src="assets/js/jquery/jquery-3.4.1.min.js"></script>
+  <script type="text/javascript" src="http://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  <script src="app.js"></script>
+</body>
+
+</html>
