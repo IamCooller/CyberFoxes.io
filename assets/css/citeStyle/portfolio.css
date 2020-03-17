@@ -18,6 +18,11 @@
   -moz-box-shadow: -1px 2px 13px 4px rgba(0,0,0,0.75);
   box-shadow: -1px 2px 13px 4px rgba(0,0,0,0.75);
 }
+.slider__item{
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto 
+}
 .slider{
   text-align: center;
   margin-top: 5%;
@@ -29,8 +34,10 @@
   background: rgba(83, 66, 180, .7);
 }
 .slider img{
-  width: 30%;
-  margin-left: 35%;
+  width: 90%;
+  max-width: 250px;
+  margin-left: auto;
+  margin-right: auto 
 }
 .portfolio__logo{
   width: 30%;
