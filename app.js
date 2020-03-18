@@ -6,7 +6,6 @@ const myFullpage = new fullpage('#fullpage', {
 	anchors: ['main','about','portfolio','contacts'],
 	navigation: true,
 	navigationPosition: 'left',
-	navigationTooltips: ['Главная', 'О нас', 'Работы', 'Контакты'],
 	showActiveTooltip: true,
 	slidesNavigation: true,
 	slidesNavPosition: 'bottom',
