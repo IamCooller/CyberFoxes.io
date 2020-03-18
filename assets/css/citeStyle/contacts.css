@@ -22,7 +22,14 @@
     padding-top: 10px;
     padding-bottom: 10px;
 }
-
+.text{
+    display: block;
+    color:white;
+    font-size: 18px;
+    max-width: 500px;
+    text-align: center;
+    margin: 0 auto;
+}
 .wrap_three .forms form{
 
     margin: 15px;
