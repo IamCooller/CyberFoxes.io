@@ -182,6 +182,12 @@ h1{
         
         padding-top: 300px;
     }
+    .title{
+        letter-spacing: 0em;
+    }
+    .main_title .btn{
+        padding: 0;
+    }
     .titel_text {
         font-size: 2rem;
     }
@@ -201,6 +207,7 @@ h1{
         .main_title {
             padding-top: 24em;
         }/* стили */
+      
         .container .wrap_two .img_two {
             margin-top: 0; 
     

@@ -134,25 +134,36 @@ justify-content: center;
             margin-top: 0;
             text-align: center;
         }
+        .people .ilya{
+            margin-right: 15px;
+        }
         .people .ilya img {
             box-shadow: 0px 4px 25px #351880;
             border-radius: 100px;
             max-width: 100px;
+            position: relative;
+            left: 10%;
+            margin: 0 auto;
+            text-align: center;
         }
         .people .vlad img {
+            position: relative;
+            left: 10%;
+            margin: 0 auto;
             box-shadow: 0px 4px 25px #351880;
             border-radius: 100px;
             max-width: 100px;
+            text-align: center;
         }
         .people {
             display: flex;
             justify-content: center;
-        padding: 0 auto; 
+            padding: 0 auto; 
         }
         .people .title_people {
             padding-top: 10px;
             margin: 0;
-            color: #BD00FF;
+            color: #dc3545;
             font-family: 'Roboto Slab',sans-serif;
             font-size: 16px;
             line-height: 15px;
