@@ -20,24 +20,33 @@
     <source src="audio/Hyper.wav" controls autoplay="autoplay">
     <source src="HyperS.mp3" type="audio/mpeg">
     </audio>
-  <!-- Навигация! её не трогай, а то поломаешь -->
-  <nav  class="navMenu fixed-top navbar navbar-default">
-    <div class="navList container">
-      <div class="nav_left">
-        <ul class="nav_left__list" id="Mymenu">
+  <!-- Навигация! -->
+  <nav  class="navMenu fixed-top navbar navbar-default navbar-expand-md">
+    
+    <button class="navbar-toggler" data-target="#my-nav" data-toggle="collapse" aria-controls="my-nav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"><img src="assets/img/three-bars.svg" alt="" width="20"></span>
+    </button>
+    <div id="my-nav" class="navList collapse navbar-collapse col-md-12">
+      
+        <ul class="nav_left__list navbar-nav mr-auto" id="Mymenu">
           <li data-menuanchor="main" class="active"><a href="#main">Главная</a></li>
           <li data-menuanchor="about"><a href="#about">О нас</a></li>
         </ul>
-      </div>
+  
 
-      <div class="nav_right">
-        <ul class="nav_right__list" id="Mymenu">
-          <li data-menuanchor="portfolio"><a href="#portfolio">Наши работы</a></li>
+
+    
+        <ul class="nav_right__list navbar-nav ml-auto" id="Mymenu">
+          <li data-menuanchor="portfolio"><a href="#portfolio">Работы</a></li>
           <li data-menuanchor="contacts"><a href="#contacts">Контакты</a></li>
         </ul>
-      </div>
+      
     </div>
   </nav>
+
+
+  
+
 
 
   <!-- Тут начинается сам сайт -->
@@ -55,7 +64,7 @@
   
         <div class="main_title">
           <h1 class=titel_text>CyberFoxes</h1>
-          <p class="title">Добро пожаловать</p>
+          <h3 class="title">Добро пожаловать</h3>
           <a href="#contacts" class="btn">Связаться</a>
         </div>
       </div>
@@ -97,23 +106,29 @@
         <span class="next"><img src="https://img.icons8.com/material-outlined/48/000000/double-right.png"/></span>
         <span class="prev"><img src="https://img.icons8.com/material-outlined/48/000000/double-right.png"/></span>
           <div class="slider">
-              <div class="slider__item"> <a href="sites/grid/index.html"><img src="sites/shop.png" alt="" srcset="" ></a>
-                <h3 class="slider__title">SHOP NOW</h3>
+              <div class="slider__item"> <a href="sites/grid/index.html"><img src="sites/shop.png" alt="" srcset=""></a>
+                
               </div>
               <div class="slider__item"><a href="sites/Mimino-boostrap/index.html"><img src="sites/minomo.png" alt="" srcset="" ></a>
-                <h3 class="slider__title">Mimino</h3>
+                
               </div>
-              <div class="slider__item"><a href="https://clean.zzz.com.ua"><img src="sites/moution.gif" alt="" srcset="" ></a>
-                <h3 class="slider__title"> MOUTION DISIGNER</h3>
+              <div class="slider__item"><a href="https://iamcooller.github.io/Exponsed.io/"><img src="sites/logo 1.png" alt="" srcset="" ></a>
+                
               </div>
+
+          
+            <div class="slider__item"><a href="https://clean.zzz.com.ua"><img src="sites/moution.gif" alt="" srcset="" ></a>
+              
+            </div>
+
               <div class="slider__item"><a href="sites/wayup/index.html"><img src="sites/logo (1)@1X.png" alt="" srcset="" ></a>
-                <h3 class="slider__title">WAYUP</h3>
+                
               </div>
               <div class="slider__item"><a href="sites/Clean/index.html"><img src="sites/logo-footer.png" alt="" srcset="" ></a>
-                <h3 class="slider__title">Clean</h3>
+               
               </div>
               <div class="slider__item"><a href="https://justeazy.github.io/"><img src="sites/izzapng.png" alt="" srcset="" ></a>
-                <h3 class="slider__title">PIZZA!</h3>
+                
               </div>
           </div>
         
@@ -127,15 +142,8 @@
             <img src="assets/img/moon.png" alt="" width=400>
           </div>
           <div class="forms container ">
-            <p class="text">Здесь форма не работает, потому что GitHub не поддерживает данный скрипт. Прошу писать в телеграмм - <a href="https://teleg.run/Ilya_Cooller"><img src="https://img.icons8.com/nolan/64/telegram-app.png" max-width=50px/></a></p>
-            <form action="#" class="form" method="POST">
-              <input type="text" placeholder="Имя" name="name" class="input" required>
-              <input type="email" placeholder="E-mail" name="email" class="input" required>       
-              <textarea type="text" placeholder="Сообщение" name="text" class="input input_text" required> </textarea>
-          </form>
-          <div class="forms_button">
-            <button type="submit" class="btn btn-form">Связаться</button>  
-          </div>
+            <p class="text">Здесь форма не работает, потому что GitHub не поддерживает данный скрипт. Поэтому пишите нам на почту: <a href="https://teleg.run/Ilya_Cooller"><img src="https://img.icons8.com/nolan/64/telegram-app.png" max-width=50px/></a> <a href="mailto:mohovilya2000@gmail.com?subject=Заказ"><img src="assets/img/icons8-gmail-50.png" max-width=50px/></a> <a href="https://vk.com/justeazy"><img src="assets/img/icons8-vk-circled-50.png" max-width=50px/></p>
+           
             
           </div>
           
@@ -153,6 +161,7 @@
 
   <script src="assets/js/fullpage/fullpage.min.js"></script>
   <script src="assets/js/jquery/jquery-3.4.1.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
   <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
   <script src="app.js"></script>
 </body>

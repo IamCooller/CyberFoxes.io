@@ -1,3 +1,15 @@
+
+@font-face {
+    font-family:Franklin Gothic Demi Cond;
+    src: url(../../fonts/FRADMCN.TTF);
+   }
+@font-face {
+    font-family:Skinz;
+    src: url(../../fonts/Skinz.ttf);
+   }
+
+
+
 header{
     background: url("../../img/backk.png") no-repeat center top;
     background-size:cover;
@@ -6,11 +18,11 @@ header{
 }
 
 .container{
-    opacity:0; /*Элемент полностью прозрачный (невидимый)*/
-    transition: 1s; /*Скорость перехода состояния элемента*/
-    animation: show 4s 1; /* Указываем название анимации, её время и количество повторов*/
-    animation-fill-mode: forwards; /* Чтобы элемент оставался в конечном состоянии анимации */
-    animation-delay: 1s; /* Задержка перед началом */
+    opacity:0; 
+    transition: 1s; 
+    animation: show 4s 1; 
+    animation-fill-mode: forwards; 
+    animation-delay: 1s; 
 }
 
 @keyframes show{
@@ -117,40 +129,38 @@ img{
         transform: translate(-50%, -55%) rotate(0deg);
 }
 }
-h1{
-    font-family: 'Franklin Gothic Demi Cond' , sans-serif;
-    font-weight: 900;
-   
-    font-size: 55px;
+.main_title h1{
+    font-family: 'Skinz' !important;
+    font-weight: 900 ;
     letter-spacing: 0.50em;
     color:#0094FF;
     box-sizing: border-box;
     -webkit-text-stroke: 2px #305068;
     text-shadow: 0px 0px 10px rgba(157, 247, 250, 0.51);
-    padding-top: 40px;
 }
 
 .title{
-    font-family: 'Franklin Gothic Demi Cond' , sans-serif;
+    font-family: 'Skinz';
     padding-top: 35px;
     font-weight: 900;
-    font-size: 25px;
+    font-size: 30px;
     line-height: 20px;
     letter-spacing: 0.105em;
-    -webkit-text-stroke: 1px #1E4460;
-    color:#B37B8E;
+    text-shadow: 0px 0px 10px rgb(34, 31, 240);
+    color: #9435dc;
 }
 
 .main_title .btn{
     background:rgba(255, 255, 255, 0.28);
     margin-top: 2%;
-	color: #DA6363;
-	width: 180px;
-	padding: 19px 0;
+    width: 180px;
+    color: #181d5d;
+    padding: 19px 0;
+    letter-spacing: 0.105em;
     text-decoration: none;
-    font-family: 'Roboto Slab' sans-serif;
+    font-family: 'Skinz' !important;
     font-weight: 900;
-    font-size: 16px;
+    font-size: 20px;
     line-height: 21px;
     transition: all 0.5s ease;
     border: 2px solid ;
@@ -161,12 +171,13 @@ h1{
 
 .main_title .btn:hover{
     padding: 9px 19px;
+    letter-spacing: 0.150em;
     box-shadow: 0px 4px 4px rgb(85, 125, 201, 0.90);
 }
 .main_title{
     display: block;
     text-align: center;
-    padding-top: 500px;
+    padding-top: 50%;
 }
 
 /* Smartphones (вертикальная и горизонтальная ориентация) ----------- */
@@ -198,10 +209,34 @@ h1{
     }
     
     /* Smartphones (горизонтальная) ----------- */
-    @media only screen and (min-width: 321px) {
+    @media (max-width: 760px) {
+        .main_title h1{
+            font-size: 20px;
+        }
+        .navList{
+            background:rgba(255, 255, 255, 0.50);
+            border: 1px solid #181d5d;
+            border-radius: 15%;
+            
+        }
+        .nav_left__list li a {
+            color: #0043fff5  !important;
+            font-weight: 900 !important;
+        }
+        .nav_right__list li a {
+            color: #0043fff5  !important;
+            font-weight: 900 !important;
+        }
     /* стили */
     }
     
+    @media (max-width: 360px) {
+        .main_title h1{
+            font-size: 16px;
+        }
+    /* стили */
+    }
+
     /* Smartphones (вертикальная) ----------- */
     @media only screen and (max-height: 785px) {
         .main_title {
@@ -248,192 +283,9 @@ h1{
         height: 100%;
         top: -60px;
     }
-    
+    @media  (max-height: 1024px){
+        .main_title {
+            padding-top: 70%;
+        }
+
 } 
-    /* iPads (вертикальная и горизонтальная) ----------- */
-    @media only screen and (min-width: 768px) and (max-width: 1024px) {
-     /* стили */
-    }
-    @media only screen and (min-width: 1000px) and (max-width: 1024px) {
-        /* стили */
-       }
-    
-    /* iPads (горизонтальная) ----------- */
-    @media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
-    /* стили */
-    }
-    
-    /* iPads (вертикальная) ----------- */
-    @media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
-    /* стили */
-    }
-    
-    /* iPad 3**********/
-    @media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 2) {
-    /* стили */
-    }
-    @media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2) {
-    /* стили */
-    }
-    
-    /* Настольные компьютеры и ноутбуки ----------- */
-    @media only screen  and (min-width: 1224px) {
-    /* стили */
-    }
-    
-    /* Большие экраны ----------- */
-    @media only screen  and (min-width: 1824px) {
-    /* стили */
-    }
-    
-    /* iPhone 4 ----------- */
-    @media only screen and (min-width: 320px) and (max-width: 480px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 2) {
-    /* стили */
-    }
-    @media only screen and (min-width: 320px) and (max-width: 480px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2) {
-    /* стили */
-    }
-    
-    /* iPhone 5 ----------- */
-    @media only screen and (min-width: 320px) and (max-height: 568px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 2){
-    /* стили */
-    }
-    @media only screen and (min-width: 320px) and (max-height: 568px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 2){
-    /* стили */
-    }
-    
-    /* iPhone 6 ----------- */
-    @media only screen and (min-width: 375px) and (max-height: 667px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 2){
-    /* стили */
-    }
-    @media only screen and (min-width: 375px) and (max-height: 667px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 2){
-    /* стили */
-    }
-    
-    /* iPhone 6+ ----------- */
-    @media only screen and (min-width: 414px) and (max-height: 736px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 2){
-    /* стили */
-    }
-    @media only screen and (min-width: 414px) and (max-height: 736px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 2){
-    /* стили */
-    }
-    
-    /* Samsung Galaxy S3 ----------- */
-    @media only screen and (min-width: 320px) and (max-height: 640px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 2){
-    /* стили */
-    }
-    @media only screen and (min-width: 320px) and (max-height: 640px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 2){
-    /* стили */
-    }
-    
-    /* Samsung Galaxy S4 ----------- */
-    @media only screen and (min-width: 320px) and (max-height: 640px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 3){
-    /* стили */
-    }
-    @media only screen and (min-width: 320px) and (max-height: 640px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 3){
-    /* стили */
-    }
-    
-    /* Samsung Galaxy S5 ----------- */
-    @media only screen and (min-width: 360px) and (max-height: 640px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 3){
-    /* стили */
-    }
-    @media only screen and (min-width: 360px) and (max-height: 640px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 3){
-    /* стили */
-    }
-    
-
-/*
-@media (max-width: 340px) { 
-    header{
-        height: 100%;
-    }
-    h1 {
-        font-size: 30px;
-    }
-    .main_title{
-        display: block;
-        text-align: center;
-        
-        padding-top: 300px;
-    }
-    img{
-       max-width: 50px;
-    }
-  }
-
-@media (max-width: 576px) { 
-    header{
-        height: 100%;
-    }
-    h1 {
-        font-size: 30px;
-    }
-    .main_title{
-        display: block;
-        text-align: center;
-        
-        padding-top: 300px;
-    }
-    img{
-       max-width: 100px;
-    }
-  }
- 
-
-
-@media (min-width: 768px) {
-    header{
-        height: 100%;
-    }
-    h1 {
-        font-size: 30px;
-    }
-    .main_title{
-        display: block;
-        text-align: center;
-        
-        padding-top: 300px;
-    }
-    img{
-       max-width: 200px;
-    }
-  }
-
-
-@media (min-width: 992px) {
-    header{
-        height: 100%;
-    }
-    h1 {
-        font-size: 40px;
-    }
-    .main_title{
-        display: block;
-        text-align: center;
-        
-        padding-top: 500px;
-    }
-    img{
-       max-width: 500px;
-    }
- }
-
-@media (min-width: 1200px) {  
-    header{
-        height: 100%;
-    }
-    h1 {
-        font-size: 50px;
-    }
-    .main_title{
-        display: block;
-        text-align: center;
-        
-        padding-top: 600px;
-    }
-    img{
-       max-width: 600px;
-    }
-  
-}*/

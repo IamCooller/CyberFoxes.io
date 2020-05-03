@@ -18,11 +18,12 @@
   -moz-box-shadow: -1px 2px 13px 4px rgba(0,0,0,0.75);
   box-shadow: -1px 2px 13px 4px rgba(0,0,0,0.75);
 }
-.slider__item{
-  width: 90%;
+.slider__item img{
   margin-left: auto;
   margin-right: auto;
 }
+
+
 .slider{
   text-align: center;
   margin-top: 5%;
@@ -37,9 +38,7 @@
   color:#fff;
 }
 .slider img{
-  width: 60%;
-  height: 60%;
-  max-width: 150px;
+ 
   margin-left: auto;
   margin-right: auto;
   margin-top: 5%;
