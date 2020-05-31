@@ -7,8 +7,8 @@
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
     integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
-  <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@500&family=Open+Sans+Condensed&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
   <title>CyberFoxes</title>
 </head>
 
@@ -19,36 +19,24 @@
     <source src="audio/Hyper.ogg" type="audio/ogg; codecs=vorbis">
     <source src="audio/Hyper.wav" controls autoplay="autoplay">
     <source src="HyperS.mp3" type="audio/mpeg">
-    </audio>
+  </audio>
   <!-- Навигация! -->
-  <nav  class="navMenu fixed-top navbar navbar-default navbar-expand-md">
-    
-    <button class="navbar-toggler" data-target="#my-nav" data-toggle="collapse" aria-controls="my-nav" aria-expanded="false" aria-label="Toggle navigation">
+  <nav class="navMenu fixed-top navbar navbar-default navbar-expand-md">
+    <button class="navbar-toggler" data-target="#my-nav" data-toggle="collapse" aria-controls="my-nav"
+      aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"><img src="assets/img/three-bars.svg" alt="" width="20"></span>
     </button>
     <div id="my-nav" class="navList collapse navbar-collapse col-md-12">
-      
-        <ul class="nav_left__list navbar-nav mr-auto" id="Mymenu">
-          <li data-menuanchor="main" class="active"><a href="#main">Главная</a></li>
-          <li data-menuanchor="about"><a href="#about">О нас</a></li>
-        </ul>
-  
-
-
-    
-        <ul class="nav_right__list navbar-nav ml-auto" id="Mymenu">
-          <li data-menuanchor="portfolio"><a href="#portfolio">Работы</a></li>
-          <li data-menuanchor="contacts"><a href="#contacts">Контакты</a></li>
-        </ul>
-      
+      <ul class="nav_left__list navbar-nav mr-auto" id="Mymenu">
+        <li data-menuanchor="main" class="active"><a href="#main">Home</a></li>
+        <li data-menuanchor="about"><a href="#about">About us</a></li>
+      </ul>
+      <ul class="nav_right__list navbar-nav ml-auto" id="Mymenu">
+        <li data-menuanchor="portfolio"><a href="#portfolio">Works</a></li>
+        <li data-menuanchor="contacts"><a href="#contacts">Contacts</a></li>
+      </ul>
     </div>
   </nav>
-
-
-  
-
-
-
   <!-- Тут начинается сам сайт -->
   <div id="fullpage">
     <header class="section">
@@ -60,108 +48,114 @@
             <img src="assets/img/fox.png" alt="" class="fox">
           </div>
         </div>
-  
-  
         <div class="main_title">
           <h1 class=titel_text>CyberFoxes</h1>
-          <h3 class="title">Добро пожаловать</h3>
-          <a href="#contacts" class="btn">Связаться</a>
+          <h3 class="title">Welcome</h3>
+          <a href="#contacts" class="btn">Contact Us</a>
         </div>
       </div>
-     
-
     </header><!-- Тут первая страница -->
     <div class="section about">
       <div class="container">
         <div class="wrap_two">
           <div class="img_two">
             <img src="assets/img/fox_two.png" alt="" width=200>
-          
-          <p>Привет, мы рады тебя здесь видеть! Мы являемся фрилансерами в области веб-разработки. <br> Каждый свой проект мы
-            стараемся выполнять быстро и креативно. Мы будем рады, если ты обратишься к нам за помощью. Ждем тебя!</p>
+            <p>Hi, we are glad to see you here! We are web development freelancers. Each his own
+              project we
+              We try to perform quickly and efficiently. We will be happy if you contact us for help. Waiting for you!
+            </p>
           </div>
+        </div>
+        <div class="people">
+          <div class="ilya">
+            <img src="assets/img/ilya.png" alt="">
+            <p class="title_people">Ilya</p>
+            <p class="title_about">Frontend, Designer</p>
           </div>
-          <div class="people">
-            <div class="ilya">
-              <img src="assets/img/ilya.png" alt="" >
-              <p class="title_people">Илья</p>
-              <p class="title_about">Frontend, Designer</p>
-            </div>
-              <div class="vlad">
-                <img src="assets/img/vlad.png" alt="" >
-                <p class="title_people">Влад</p>
-              <p class="title_about">Frontend, Backend</p>
-              </div>
-            
-            
+          <div class="vlad">
+            <img src="assets/img/vlad.png" alt="">
+            <p class="title_people">Vlad</p>
+            <p class="title_about">Frontend, Backend</p>
           </div>
+        </div>
       </div>
-    </div><!-- Тут вторая страница -->
-
-    <div class="section portfolio" ><!-- Тут третья страница -->
+    </div>
+    <div class="section portfolio">
+      <!-- Тут третья страница -->
       <div class="portfolio__logo">
         <img src="assets/img/portLogo.png" alt="" srcset="">
       </div>
-      <div class="portfolio__slider">
-        <span class="next"><img src="https://img.icons8.com/material-outlined/48/000000/double-right.png"/></span>
-        <span class="prev"><img src="https://img.icons8.com/material-outlined/48/000000/double-right.png"/></span>
-          <div class="slider">
-              <div class="slider__item"> <a href="sites/grid/index.html"><img src="sites/shop.png" alt="" srcset=""></a>
-                
-              </div>
-              <div class="slider__item"><a href="sites/Mimino-boostrap/index.html"><img src="sites/minomo.png" alt="" srcset="" ></a>
-                
-              </div>
-              <div class="slider__item"><a href="https://iamcooller.github.io/Exponsed.io/"><img src="sites/logo 1.png" alt="" srcset="" ></a>
-                
-              </div>
-
-          
-            <div class="slider__item"><a href="https://clean.zzz.com.ua"><img src="sites/moution.gif" alt="" srcset="" ></a>
-              
+      <div class="container slids">
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+          <ol class="carousel-indicators">
+            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="5"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="6"></li>
+          </ol>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <a href="sites/grid/index.html"><img src="sites/shop.png" class="d-block w-100 h-100" alt=""
+                  srcset=""></a>
             </div>
-
-              <div class="slider__item"><a href="sites/wayup/index.html"><img src="sites/logo (1)@1X.png" alt="" srcset="" ></a>
-                
-              </div>
-              <div class="slider__item"><a href="sites/Clean/index.html"><img src="sites/logo-footer.png" alt="" srcset="" ></a>
-               
-              </div>
-              <div class="slider__item"><a href="https://justeazy.github.io/"><img src="sites/izzapng.png" alt="" srcset="" ></a>
-                
-              </div>
+            <div class="carousel-item">
+              <a href="sites/Mimino-boostrap/index.html"><img class="d-block" src="sites/minomo.png" alt=""
+                  srcset=""></a>
+            </div>
+            <div class="carousel-item">
+              <a href="https://iamcooller.github.io/Exponsed.io/"><img src="sites/logo 1.png" class="d-block" alt=""
+                  srcset=""></a>
+            </div>
+            <div class="carousel-item">
+              <a href="https://clean.zzz.com.ua"><img src="sites/moution.gif" class="d-bloc" alt="" srcset=""></a>
+            </div>
+            <div class="carousel-item">
+              <a href="sites/wayup/index.html"><img src="sites/logo (1)@1X.png" class="d-block" alt="" srcset=""></a>
+            </div>
+            <div class="carousel-item">
+              <a href="sites/Clean/index.html"><img src="sites/logo-footer.png" class="d-block " alt="" srcset=""></a>
+            </div>
+            <div class="carousel-item">
+              <a href="https://justeazy.github.io/"><img src="sites/izzapng.png" class="d-block" alt="" srcset=""></a>
+            </div>
           </div>
-        
+          <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
       </div>
     </div>
-   
-    <div class="section contacts" > 
+    <div class="section contacts">
       <div class="container">
         <div class="wrap_three">
           <div class="img_moon">
             <img src="assets/img/moon.png" alt="" width=400>
           </div>
           <div class="forms container ">
-            <p class="text">Здесь форма не работает, потому что GitHub не поддерживает данный скрипт. Поэтому пишите нам на почту: <a href="https://teleg.run/Ilya_Cooller"><img src="https://img.icons8.com/nolan/64/telegram-app.png" max-width=50px/></a> <a href="mailto:mohovilya2000@gmail.com?subject=Заказ"><img src="assets/img/icons8-gmail-50.png" max-width=50px/></a> <a href="https://vk.com/justeazy"><img src="assets/img/icons8-vk-circled-50.png" max-width=50px/></p>
-           
-            
+            <p class="text">We are waiting for your message! <a href="https://teleg.run/Ilya_Cooller"><img
+                  src="https://img.icons8.com/nolan/64/telegram-app.png" max-width=50px /></a> <a
+                href="mailto:mohovilya2000@gmail.com?subject=Заказ"><img src="assets/img/icons8-gmail-50.png"
+                  max-width=50px /></a> <a href="https://vk.com/justeazy"><img src="assets/img/icons8-vk-circled-50.png"
+                  max-width=50px /></p>
           </div>
-          
         </div>
       </div>
-      
-    
     </div><!-- Тут четвертая страница -->
   </div>
   <!-- Конец сайта -->
-
-
-
-
-
   <script src="assets/js/fullpage/fullpage.min.js"></script>
   <script src="assets/js/jquery/jquery-3.4.1.min.js"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
+  </script>
   <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
   <script src="app.js"></script>
 </body>

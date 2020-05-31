@@ -1,27 +1,38 @@
-.about{
-    
-    background: rgb(29,84,135);
-    background: linear-gradient(90deg, rgba(29,84,135,1) 0%, rgba(86,19,171,1) 100%);
-    background: url('../../img/back_two.png')no-repeat center top ;
+
+
+.about {
+    background: rgb(29, 84, 135);
+    background: -webkit-gradient(linear, left top, right top, from(rgba(29, 84, 135, 1)), to(rgba(86, 19, 171, 1)));
+    background: -o-linear-gradient(left, rgba(29, 84, 135, 1) 0%, rgba(86, 19, 171, 1) 100%);
+    background: linear-gradient(90deg, rgba(29, 84, 135, 1) 0%, rgba(86, 19, 171, 1) 100%);
+    background: url('../../img/back_two.png')no-repeat center top;
     background-size: cover;
     position: relative;
 }
 
-.container .wrap_two{
-display: flex;
-justify-content: center;
+.container .wrap_two {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
 }
 
-.container .wrap_two .img_two{
+p {
+    font-family: 'Righteous',
+        cursive;
+}
+
+.container .wrap_two .img_two {
     margin-top: 100px;
     text-align: center;
-    
-    
 }
 
-.container .wrap_two .img_two p{
-    color:#fff;
-    font-family: 'Open Sans Condensed', sans-serif;
+.container .wrap_two .img_two p {
+    color: #fff;
+    font-family: 'Righteous',
+        cursive;
     font-size: 18px;
     line-height: 25px;
     width: 553px;
@@ -29,254 +40,183 @@ justify-content: center;
 }
 
 .people {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
     padding: 0 100px;
 }
 
-.people .ilya img{
+.people .ilya img {
+    -webkit-box-shadow: 0px 4px 25px #351880;
     box-shadow: 0px 4px 25px #351880;
     border-radius: 100px;
     width: 206px;
 }
 
-.people .title_people{
+.people .title_people {
     padding-top: 10px;
     margin: 0;
     color: #BD00FF;
-    font-family: 'Open Sans Condensed', sans-serif;
+    font-family: 'Righteous',
+        cursive;
     font-size: 20px;
     line-height: 21px;
     text-align: center;
 }
 
-.people .title_about{
+.people .title_about {
     padding: 0;
-    color:#fff;
+    color: #fff;
     font-size: 20px;
     text-align: center;
 }
-.people .vlad img{
+
+.people .vlad img {
+    -webkit-box-shadow: 0px 4px 20px #351880;
     box-shadow: 0px 4px 20px #351880;
     border-radius: 100px;
     width: 206px;
 }
-.img_two p{
-    font-family: 'Open Sans Condensed', sans-serif;
-}
+
+
 
 /* Smartphones (вертикальная и горизонтальная ориентация) ----------- */
 @media only screen and (min-width : 320px) and (max-width : 480px) {
     .container .wrap_two .img_two p {
-        color: #fff;
-        font-family: 'Roboto Slab', sans-serif;
+
+        font-size: 15px;
+        line-height: 25px;
+        padding-top: 25px;
+    }
+
+    .container .wrap_two .img_two {
+        margin-top: 0;
+        text-align: center;
+    }
+
+    .people .ilya img {
+        -webkit-box-shadow: 0px 4px 25px #351880;
+        box-shadow: 0px 4px 25px #351880;
+        border-radius: 100px;
+        max-width: 100px;
+    }
+
+    .people .vlad img {
+        -webkit-box-shadow: 0px 4px 25px #351880;
+        box-shadow: 0px 4px 25px #351880;
+        border-radius: 100px;
+        max-width: 100px;
+    }
+
+    .people {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        padding: 0 auto;
+    }
+
+    .people .title_people {
+        padding-top: 10px;
+        margin: 0;
+
+        font-size: 16px;
+        line-height: 15px;
+        text-align: center;
+    }
+
+    .people .title_about {
+
+        font-size: 16px;
+        text-align: center;
+        padding: 0px;
+    }
+
+    img {
+        max-width: 300px;
+    }
+
+    /* стили */
+}
+
+@media only screen and (max-height: 785px) {
+    .container .wrap_two .img_two {
+        margin-top: 0;
+    }
+}
+
+@media (max-height: 685px) {
+
+    .container .wrap_two .img_two p {
+
         font-size: 15px;
         line-height: 25px;
         width: auto;
         padding-top: 25px;
     }
+
     .container .wrap_two .img_two {
         margin-top: 0;
         text-align: center;
     }
+
+    .people .ilya {
+        margin-right: 15px;
+    }
+
     .people .ilya img {
+        -webkit-box-shadow: 0px 4px 25px #351880;
         box-shadow: 0px 4px 25px #351880;
         border-radius: 100px;
         max-width: 100px;
+        position: relative;
+        left: 10%;
+        margin: 0 auto;
+        text-align: center;
     }
+
     .people .vlad img {
+        position: relative;
+        left: 10%;
+        margin: 0 auto;
+        -webkit-box-shadow: 0px 4px 25px #351880;
         box-shadow: 0px 4px 25px #351880;
         border-radius: 100px;
         max-width: 100px;
+        text-align: center;
     }
+
     .people {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        justify-content: center;
-    padding: 0 auto; 
+        -ms-flex-pack: distribute;
+        justify-content: space-around;
+        padding: 0 auto;
     }
+
     .people .title_people {
         padding-top: 10px;
         margin: 0;
-        color: #BD00FF;
-        font-family: 'Roboto Slab',sans-serif;
+
         font-size: 16px;
         line-height: 15px;
         text-align: center;
     }
+
     .people .title_about {
-        
+
         font-size: 16px;
         text-align: center;
         padding: 0px;
     }
-    img {
-    max-width: 300px;
-}
-    /* стили */
-}
-    
-    @media only screen and (max-height: 785px){
-    .container .wrap_two .img_two {
-        margin-top: 0; 
-    }
-}
-    @media only screen and (max-height: 685px) {
 
-        .container .wrap_two .img_two p {
-            color: #fff;
-            font-family: 'Roboto Slab', sans-serif;
-            font-size: 15px;
-            line-height: 25px;
-            width: auto;
-            padding-top: 25px;
-        }
-        .container .wrap_two .img_two {
-            margin-top: 0;
-            text-align: center;
-        }
-        .people .ilya{
-            margin-right: 15px;
-        }
-        .people .ilya img {
-            box-shadow: 0px 4px 25px #351880;
-            border-radius: 100px;
-            max-width: 100px;
-            position: relative;
-            left: 10%;
-            margin: 0 auto;
-            text-align: center;
-        }
-        .people .vlad img {
-            position: relative;
-            left: 10%;
-            margin: 0 auto;
-            box-shadow: 0px 4px 25px #351880;
-            border-radius: 100px;
-            max-width: 100px;
-            text-align: center;
-        }
-        .people {
-            display: flex;
-            justify-content: center;
-            padding: 0 auto; 
-        }
-        .people .title_people {
-            padding-top: 10px;
-            margin: 0;
-            color: #dc3545;
-            font-family: 'Roboto Slab',sans-serif;
-            font-size: 16px;
-            line-height: 15px;
-            text-align: center;
-        }
-        .people .title_about {
-          
-            font-size: 16px;
-            text-align: center;
-            padding: 0px;
-        }
-        img {
+    img {
         max-width: 300px;
     }
-    }
-    /* Smartphones (горизонтальная) ----------- */
-    @media only screen and (min-width: 321px) {
-    /* стили */
-    }
-    
-    /* Smartphones (вертикальная) ----------- */
-    @media only screen and (max-width: 320px) {
-    /* стили */
-    }
-    
-    /* iPads (вертикальная и горизонтальная) ----------- */
-    @media only screen and (min-width: 768px) and (max-width: 1024px) {
-     /* стили */
-    }
-    @media only screen and (min-width: 1000px) and (max-width: 1024px) {
-        /* стили */
-       }
-    
-    /* iPads (горизонтальная) ----------- */
-    @media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
-    /* стили */
-    }
-    
-    /* iPads (вертикальная) ----------- */
-    @media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
-    /* стили */
-    }
-    
-    /* iPad 3**********/
-    @media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 2) {
-    /* стили */
-    }
-    @media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2) {
-    /* стили */
-    }
-    
-    /* Настольные компьютеры и ноутбуки ----------- */
-    @media only screen  and (min-width: 1224px) {
-    /* стили */
-    }
-    
-    /* Большие экраны ----------- */
-    @media only screen  and (min-width: 1824px) {
-    /* стили */
-    }
-    
-    /* iPhone 4 ----------- */
-    @media only screen and (min-width: 320px) and (max-width: 480px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 2) {
-    /* стили */
-    }
-    @media only screen and (min-width: 320px) and (max-width: 480px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2) {
-    /* стили */
-    }
-    
-    /* iPhone 5 ----------- */
-    @media only screen and (min-width: 320px) and (max-height: 568px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 2){
-    /* стили */
-    }
-    @media only screen and (min-width: 320px) and (max-height: 568px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 2){
-    /* стили */
-    }
-    
-    /* iPhone 6 ----------- */
-    @media only screen and (min-width: 375px) and (max-height: 667px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 2){
-    /* стили */
-    }
-    @media only screen and (min-width: 375px) and (max-height: 667px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 2){
-    /* стили */
-    }
-    
-    /* iPhone 6+ ----------- */
-    @media only screen and (min-width: 414px) and (max-height: 736px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 2){
-    /* стили */
-    }
-    @media only screen and (min-width: 414px) and (max-height: 736px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 2){
-    /* стили */
-    }
-    
-    /* Samsung Galaxy S3 ----------- */
-    @media only screen and (min-width: 320px) and (max-height: 640px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 2){
-    /* стили */
-    }
-    @media only screen and (min-width: 320px) and (max-height: 640px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 2){
-    /* стили */
-    }
-    
-    /* Samsung Galaxy S4 ----------- */
-    @media only screen and (min-width: 320px) and (max-height: 640px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 3){
-    /* стили */
-    }
-    @media only screen and (min-width: 320px) and (max-height: 640px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 3){
-    /* стили */
-    }
-    
-    /* Samsung Galaxy S5 ----------- */
-    @media only screen and (min-width: 360px) and (max-height: 640px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 3){
-    /* стили */
-    }
-    @media only screen and (min-width: 360px) and (max-height: 640px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 3){
-    /* стили */
-    }
+}
